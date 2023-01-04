@@ -1,0 +1,125 @@
+*{
+    /* border : 2px solid crimson   */
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100vh;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+  .maincontainer{
+    border : 2px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container{
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden; 
+  }
+  .component{
+    width: 17rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-top: 20px;
+  }
+  img{
+    width: 20%;
+    padding-top: 1rem;
+  }
+h1{
+    padding-top: 1rem;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:  hsl(0, 0%, 95%);
+}
+p{
+    padding-top: 1rem;
+    padding-right: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+  }
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+
+}
+.SUV{
+    background-color:  hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+button{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    border-radius: 25px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.6rem;
+    width: 8rem;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    background-color:  hsl(0, 0%, 95%);
+}
+.sedan button{
+    color: hsl(31, 77%, 52%);
+
+}
+.SUV button{
+    color:  hsl(184, 100%, 22%);
+}
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+@media (max-width : 550px){
+    html, body {
+        height: 150vh;
+        padding: 1rem 0rem;
+        padding-top: 0rem;
+    }
+    .container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        overflow:visible;
+    }
+    .component{
+        width: 80vw;
+        margin: auto;
+        
+    }
+    .sedan{
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+    .luxury{
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+}

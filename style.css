@@ -1,0 +1,98 @@
+*{
+     /* border : 2px solid crimson  */
+}
+body{
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    border : 2px solid yellow;
+    height: 130vh;
+}
+.maincontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    border : 2px solid blue; 
+}
+.container{
+    height: 90vh;
+    width: 54rem;
+    display: flex;
+    border : 2px solid pink;
+    align-items: center;
+    justify-content: center;
+}
+.component{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    padding-left: 40px;
+    padding-right: 2.3rem;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 1.7rem;
+}
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+
+}
+.SUV{
+    background-color:  hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+img{
+    padding-top: 2rem;
+    width :3rem;
+}
+p{
+    margin-top:0;
+}
+button{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    border-radius: 25px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    width: 8rem;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+.sedan button{
+    color: hsl(31, 77%, 52%);
+
+}
+.SUV button{
+    color:  hsl(184, 100%, 22%);
+}
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+@media (max-width : 550px){
+    .maincontainer{
+        height: 100vh;
+        width: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+    width: 30rem;
+    height: 90vh;
+    display: flex;
+    flex-direction: column; 
+    }
+    button{
+        margin-top: 0px;
+    }
+    
+}
